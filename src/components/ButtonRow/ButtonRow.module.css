@@ -1,2 +1,7 @@
 .buttonRow {
+  white-space: nowrap;
+}
+
+.buttonRow :last-child {
+  margin-right: 24px;
 }
