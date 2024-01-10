@@ -2,6 +2,8 @@
   overflow: hidden;
 
   background-color: white;
+
+  /* Optical centering */
   border-radius: 8px;
 
   /*
@@ -13,19 +15,19 @@
 }
 
 .controlPaneContent {
+  padding-top: 18px;
   padding: 24px;
 
   max-width: 100%;
   overflow-x: auto;
-
-  /* Optical centering */
-  padding-top: 18px;
 }
 
 .title {
-  margin: 0;
-  /* Optical centering */
-  margin-bottom: -4px;
+  position: sticky;
+  left: 0px;
+
+  margin-top: -4px;
+  margin-bottom: 10px;
 }
 
 .metadata {
@@ -33,4 +35,9 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+@media (max-width: 600px) {
+  .controlPane {
+  }
 }
